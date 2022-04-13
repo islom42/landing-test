@@ -10,7 +10,7 @@ $primary-color: rgb(238, 238, 238);
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -176,7 +176,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -186,7 +187,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -388,7 +390,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(22, 21, 21, 0.795); 
+    background-color: rgba(22, 21, 21, 0.795);
     z-index: -1;
   }
 }
@@ -406,7 +408,7 @@ body {
     width: 100%;
     height: 65px;
   }
-  .aside__btn-hamburger{
+  .aside__btn-hamburger {
     display: inline-block;
     height: 2px;
     background-color: $primary-color;
@@ -429,7 +431,7 @@ body {
       background-color: $primary-color;
     }
   }
-  .aside__socials-link{
+  .aside__socials-link {
     display: block;
     text-align: center;
     transform: rotate(-90deg);
@@ -477,7 +479,6 @@ body {
       // }
     }
   }
- 
 }
 // Main styles
 
@@ -495,14 +496,14 @@ body {
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
   }
-  &__line-effect{
+  &__line-effect {
     display: inline-block;
     height: 3px;
     border-radius: 3px;
     width: 50%;
     background-color: coral;
     position: relative;
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       height: 3px;
@@ -516,7 +517,7 @@ body {
     line-height: 27px;
   }
   &__page-description {
-    opacity: .7;
+    opacity: 0.7;
     line-height: 20px;
     font-size: 0.9rem;
   }
@@ -539,27 +540,31 @@ body {
 // Footer styles
 #footer {
   height: 20vh;
-  background-color: rgba(116, 112, 112, 0.3); 
+  background-color: rgba(116, 112, 112, 0.3);
+  color: $primary-color;
   .dis-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  .footer__contact {
+    width: 45%;
   }
   .contact-items {
     display: flex;
-  } 
+    justify-content: space-between;
+  }
   .footer__news {
     display: flex;
+    width: 50%;
   }
-  .footer__news-image img {
-    width: 30%;
+  .footer__news-image {
     height: 100%;
-    object-fit: contain;
+    width: 80%;
+    padding-right: 1rem;
+    img {
+      width: 100%;
+    }
   }
-
 }
 // Footer styles
-
-
-
-
-

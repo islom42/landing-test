@@ -541,7 +541,7 @@ body {
 }
 
 .intro__page-description {
-  opacity: .7;
+  opacity: 0.7;
   line-height: 20px;
   font-size: 0.9rem;
 }
@@ -565,6 +565,7 @@ body {
 #footer {
   height: 20vh;
   background-color: rgba(116, 112, 112, 0.3);
+  color: #eeeeee;
 }
 
 #footer .dis-flex {
@@ -574,23 +575,37 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer__contact {
+  width: 45%;
 }
 
 #footer .contact-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #footer .footer__news {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
+}
+
+#footer .footer__news-image {
+  height: 100%;
+  width: 80%;
+  padding-right: 1rem;
 }
 
 #footer .footer__news-image img {
-  width: 30%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
 }
